@@ -50,7 +50,7 @@
   {/foreach}
 </table>
 {else}
-<h3 align="left">Banlist Overview - <i>Всего блокировок: {$total_bans}</i></h3>
+<h3 align="left">Обзор блокировок - <i>Всего блокировок: {$total_bans}</i></h3>
 <br />
 {php} require (TEMPLATES_PATH . "/admin.bans.search.php");{/php}
 <br />
@@ -63,7 +63,7 @@
 			{/if}
 			<td width="12%" height="16" class="listtable_top" align="center"><b>МОД/Страна</b></td>
 			<td width="14%" height="16" class="listtable_top" align="center"><b>Дата</b></td>
-			<td height="16" class="listtable_top"><b>Игрок</b></td>
+			<td height="16" class="listtable_top"><b>Ник игрока</b></td>
 			{if !$hideadminname}
 			<td width="20%" height="16" class="listtable_top"><b>Администратор</b></td>
 			{/if}
@@ -117,7 +117,7 @@
 						<table width="100%" cellspacing="0" cellpadding="0" class="listtable">
               <tr>
                 <td height="16" align="left" class="listtable_top" colspan="3">
-									<b>Ban Details</b>            
+									<b>Детали блокировки</b>            
 								</td>
               </tr>
               <tr align="left">
@@ -222,7 +222,7 @@
 					            <td width="20%" height="16" class="listtable_1">Причина снятия блокировки</td>
 					            <td height="16" class="listtable_1">
 								{if $ban.ureason == ""}
-									<i><font color="#677882">no reason present</font></i>
+									<i><font color="#677882">не указана</font></i>
 								{else}
 									{$ban.ureason}
 								{/if}
@@ -243,7 +243,7 @@
 					            <td width="20%" height="16" class="listtable_1">Истекает</td>
 					            <td height="16" class="listtable_1">
 					            	{if $ban.expires == "never"}
-		     							<i><font color="#677882">Not applicable.</font></i>
+		     							<i><font color="#677882">Не применимо.</font></i>
 		     						{else}
 		     							{$ban.expires}
 		     						{/if}

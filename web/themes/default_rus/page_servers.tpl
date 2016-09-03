@@ -17,7 +17,7 @@
 		            <td height="16" align="center" class="listtable_1"><img src="images/games/{$server.icon}" border="0" /></td>
 		            <td height="16" align="center" class="listtable_1" id="os_{$server.sid}"></td>
 		            <td height="16" align="center" class="listtable_1" id="vac_{$server.sid}"></td>
-		            <td height="16" class="listtable_1" id="host_{$server.sid}"><i>Запросить данные с сервера...</i></td>
+		            <td height="16" class="listtable_1" id="host_{$server.sid}"><i>Запрос данных с сервера...</i></td>
 		            <td height="16" class="listtable_1" id="players_{$server.sid}">N/A</td>
 		            <td height="16" class="listtable_1" id="map_{$server.sid}">N/A</td>
 		          </tr>

@@ -11,7 +11,7 @@
 <table cellspacing='10' width='100%' align='center'>
 <tr>
 	<td colspan="3">
-		Ban Details:	</td>
+		Детали блокировки:	</td>
 </tr>
 <tr>
 	<td width="20%">
@@ -70,7 +70,7 @@
 		Загрузите демо:	</td>
 	<td>
 		<input name="demo_file" type="file" size="25" class="file" style="width: 268px;" /><br />
-		Примечание: Только DEM, <a href="http://www.winzip.com" target="_blank">ZIP</a>, <a href="http://www.rarlab.com" target="_blank">RAR</a>, <a href="http://www.7-zip.org" target="_blank">7Z</a>, <a href="http://www.bzip.org" target="_blank">BZ2</a> or <a href="http://www.gzip.org" target="_blank">GZ</a> разрешены.	</td>
+		Примечание: Только DEM, <a href="http://www.winzip.com" target="_blank">ZIP</a>, <a href="http://www.rarlab.com" target="_blank">RAR</a>, <a href="http://www.7-zip.org" target="_blank">7Z</a>, <a href="http://www.bzip.org" target="_blank">BZ2</a> или <a href="http://www.gzip.org" target="_blank">GZ</a> разрешены.	</td>
     </tr>
 <tr>
 	<td width="20%"><span class="mandatory">*</span> = Поля обязательные для заполнения</td>

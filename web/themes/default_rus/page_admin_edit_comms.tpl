@@ -9,7 +9,7 @@
 				<i>Redirecting back to blocks page</i>
 			</div>
 			<div id="add-group">
-		<h3>Block Details</h3>
+		<h3>Детали блокировки</h3>
 		For more information or help regarding a certain subject move your mouse over the question mark.<br /><br />
 		<input type="hidden" name="insert_type" value="add">
 			<table width="90%" border="0" style="border-collapse:collapse;" id="group.details" cellpadding="3">

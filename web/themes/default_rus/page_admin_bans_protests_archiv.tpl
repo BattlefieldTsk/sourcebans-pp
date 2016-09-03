@@ -79,7 +79,7 @@
             						<td width="20%" height="16" class="listtable_1">End Date</td>
             						<td height="16" class="listtable_1">
             							{if $protest.ends == 'never'}
-		     								<i><font color="#677882">Not applicable.</font></i>
+		     								<i><font color="#677882">Не применимо.</font></i>
 		     							{else}
 		     								{$protest.ends}
 		     							{/if}

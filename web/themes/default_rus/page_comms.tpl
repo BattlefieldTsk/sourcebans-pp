@@ -50,7 +50,7 @@
   {/foreach}
 </table>
 {else}
-<h3 align="left">Communications Blocklist Overview - <i>Total Blocks: {$total_bans}</i></h3>
+<h3 align="left">Обзор блокировок микрофона и чата - <i>Всего блокировок: {$total_bans}</i></h3>
 <br />
 {php} require (TEMPLATES_PATH . "/admin.comms.search.php");{/php}
 <br />
@@ -61,13 +61,13 @@
 <div id="banlist">
 	<table width="100%" cellspacing="0" cellpadding="0" align="center" class="listtable">
 		<tr>			
-			<td width="8%" height="16" class="listtable_top" align="center"><b>MOD/Type</b></td>
-			<td width="14%" height="16" class="listtable_top" align="center"><b>Date</b></td>
-			<td height="16" class="listtable_top"><b>Player</b></td>
+			<td width="8%" height="16" class="listtable_top" align="center"><b>МОД/Тип</b></td>
+			<td width="14%" height="16" class="listtable_top" align="center"><b>Дата</b></td>
+			<td height="16" class="listtable_top"><b>Ник игрока</b></td>
 			{if !$hideadminname}
-			<td width="12%" height="16" class="listtable_top"><b>Admin</b></td>
+			<td width="12%" height="16" class="listtable_top"><b>Администратор</b></td>
 			{/if}
-			<td width="16%" height="16" class="listtable_top" align="center"><b>Length</b></td>
+			<td width="16%" height="16" class="listtable_top" align="center"><b>Продолжительность</b></td>
 		</tr>
 		{foreach from=$ban_list item=ban name=banlist}
 			<tr class="opener tbl_out" onmouseout="this.className='tbl_out'" onmouseover="this.className='tbl_hover'" 
@@ -116,11 +116,11 @@
               	{else}
               	<td height="16" align="left" class="listtable_top" colspan="2">
               	{/if}
-									<b>Block Details</b>            
+									<b>Детали блокировки микрофона и чата</b>            
 								</td>
               </tr>
               <tr align="left">
-                <td width="20%" height="16" class="listtable_1">Player</td>
+                <td width="20%" height="16" class="listtable_1">Ник игрока</td>
                 <td height="16" class="listtable_1">
                   {if empty($ban.player)}
                     <i><font color="#677882">no nickname present</font></i>
@@ -178,26 +178,26 @@
               	</td>
               </tr>
                 <tr align="left">
-								<td width="20%" height="16" class="listtable_1">Invoked on</td>
+								<td width="20%" height="16" class="listtable_1">Заблокирован</td>
 								<td height="16" class="listtable_1">{$ban.ban_date}</td>
 					        </tr>
 					        <tr align="left">
-					            <td width="20%" height="16" class="listtable_1">Block length</td>
+					            <td width="20%" height="16" class="listtable_1">Продолжительность блокировки</td>
 					            <td height="16" class="listtable_1">{$ban.banlength}</td>
 					        </tr>
 							{if $ban.unbanned}
 							<tr align="left">
-					            <td width="20%" height="16" class="listtable_1">Unblock reason</td>
+					            <td width="20%" height="16" class="listtable_1">Причина снятия блокировки</td>
 					            <td height="16" class="listtable_1">
 								{if $ban.ureason == ""}
-									<i><font color="#677882">no reason present</font></i>
+									<i><font color="#677882">не указана</font></i>
 								{else}
 									{$ban.ureason}
 								{/if}
 								</td>
 					        </tr>
 							 <tr align="left">
-					            <td width="20%" height="16" class="listtable_1">Unblocked by Admin</td>
+					            <td width="20%" height="16" class="listtable_1">Разблокирован администратором</td>
 					            <td height="16" class="listtable_1">
                                     {if !empty($ban.removedby)}
 										{$ban.removedby|escape:'html'}
@@ -208,22 +208,22 @@
 					        </tr>
 							{/if}
 					        <tr align="left">
-					            <td width="20%" height="16" class="listtable_1">Expires on</td>
+					            <td width="20%" height="16" class="listtable_1">Истекает</td>
 					            <td height="16" class="listtable_1">
 					            	{if $ban.expires == "never"}
-		     							<i><font color="#677882">Not applicable.</font></i>
+		     							<i><font color="#677882">Не применимо.</font></i>
 		     						{else}
 		     							{$ban.expires}
 		     						{/if}
 		     					</td>
 							</tr>
 							<tr align="left">
-								<td width="20%" height="16" class="listtable_1">Reason</td>
+								<td width="20%" height="16" class="listtable_1">Причина</td>
 								<td height="16" class="listtable_1">{$ban.reason|escape:'html'}</td>
 							</tr>
 							{if !$hideadminname}
 							<tr align="left">
-								<td width="20%" height="16" class="listtable_1">Blocked by Admin</td>
+								<td width="20%" height="16" class="listtable_1">Кем заблокирован</td>
 								<td height="16" class="listtable_1">
 									{if !empty($ban.admin)}
 										{$ban.admin|escape:'html'}
@@ -234,22 +234,22 @@
 							</tr>
 							{/if}
 							<tr align="left">
-								<td width="20%" height="16" class="listtable_1">Blocked from</td>
+								<td width="20%" height="16" class="listtable_1">Где заблокирован</td>
 								<td height="16" class="listtable_1" id="ban_server_{$ban.ban_id}">
 									{if $ban.server_id == 0}
 										Web Ban
 									{else}
-										Please Wait...
+										Пожалуйста подождите...
 									{/if}
 								</td>
 							</tr>
 							<tr align="left">
-								<td width="20%" height="16" class="listtable_1">Total Blocks</td>
+								<td width="20%" height="16" class="listtable_1">Всего блокировок</td>
 								<td height="16" class="listtable_1">{$ban.prevoff_link}</td>
 							</tr>
 							{if $view_comments}
 							<tr align="left">
-								<td width="20%" height="16" class="listtable_1">Comments</td>
+								<td width="20%" height="16" class="listtable_1">Комментарий</td>
 								<td height="60" class="listtable_1" colspan="2">
 								{if $ban.commentdata != "None"}
 								<table width="100%" border="0">
