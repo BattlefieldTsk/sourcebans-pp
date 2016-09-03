@@ -2,7 +2,7 @@
 <h3>{$commenttype} Comment</h3>
 <table width="90%" align="center" border="0" style="border-collapse:collapse;" id="group.details" cellpadding="3">
   <tr>
-	<td valign="top"><div class="rowdesc">{help_icon title="Comment Text" message="Type the text you would like to say."}Comment</div></td>
+	<td valign="top"><div class="rowdesc">{help_icon title="Текст комментария" message="Введите здесь текст комментария."}Комментарий</div></td>
   </tr>
   <tr>
 	<td><div align="left">
@@ -83,19 +83,19 @@
         <td height="16" class="listtable_1">
 		  <div style="float:left;">
           {if empty($ban.player)}
-            <i><font color="#677882">no nickname present</font></i>
+            <i><font color="#677882">ник игрока отсутствует</font></i>
           {else}
             {$ban.player|escape:'html'|stripslashes}
           {/if}
 		  </div>
 		  {if $ban.demo_available}
 		  <div style="float:right;">
-		  <img src="images/demo.gif" alt="Demo" title="Demo available" style="height:14px;width:14px;" />
+		  <img src="images/demo.gif" alt="Демо" title="Есть демо" style="height:14px;width:14px;" />
 		  </div>
 		  {/if}
 		  {if $view_comments && $ban.commentdata != "None" && $ban.commentdata|@count > 0}
 		  <div style="float:right;">
-		  {$ban.commentdata|@count} <img src="images/details.gif" alt="Comments" title="Comments" style="height:12px;width:12px;" />
+		  {$ban.commentdata|@count} <img src="images/details.gif" alt="Комментарии" title="Есть комментарии" style="height:12px;width:12px;" />
 		  </div>
 		  {/if}
         </td>
@@ -104,7 +104,7 @@
         {if !empty($ban.admin)}
             {$ban.admin|escape:'html'}
         {else}
-            <i><font color="#677882">Admin deleted</font></i>
+            <i><font color="#677882">Администратор удалён</font></i>
         {/if}
         </td>
 		{/if}
@@ -124,7 +124,7 @@
                 <td width="30%" height="16" class="listtable_1">Ник игрока</td>
                 <td height="16" class="listtable_1">
                   {if empty($ban.player)}
-                    <i><font color="#677882">no nickname present</font></i>
+                    <i><font color="#677882">ник игрока отсутствует</font></i>
                   {else}
                     {$ban.player|escape:'html'|stripslashes}
                   {/if}
@@ -175,7 +175,7 @@
                 <td width="20%" height="16" class="listtable_1">Steam ID</td>
                 <td height="16" class="listtable_1">
                   {if empty($ban.steamid)}
-                    <i><font color="#677882">No Steam ID present</font></i>
+                    <i><font color="#677882">Steam ID игрока отсутствует</font></i>
                   {else}
                     {$ban.steamid}
                   {/if}
@@ -185,7 +185,7 @@
                 <td width="20%" height="16" class="listtable_1">Steam3 ID</td>
                 <td height="16" class="listtable_1">
                   {if empty($ban.steamid)}
-                    <i><font color="#677882">No Steam3 ID present</font></i>
+                    <i><font color="#677882">Steam3 ID игрока отсутствует</font></i>
                   {else}
                     <a href="http://steamcommunity.com/profiles/{$ban.steamid3}" target="_blank">{$ban.steamid3}</a>
                   {/if}
@@ -202,7 +202,7 @@
                 <td width="20%" height="16" class="listtable_1">IP адрес</td>
                 <td height="16" class="listtable_1">
                   {if $ban.ip == "none"}
-                    <i><font color="#677882">no IP address present</font></i>
+                    <i><font color="#677882">IP адрес игрока отсутствует</font></i>
                   {else}
                     {$ban.ip}
                   {/if}
@@ -234,7 +234,7 @@
                                     {if !empty($ban.removedby)}
 										{$ban.removedby|escape:'html'}
 									{else}
-										<i><font color="#677882">Admin deleted.</font></i>
+										<i><font color="#677882">Администратор удалён.</font></i>
 									{/if}
                                 </td>
 					        </tr>
@@ -260,7 +260,7 @@
 									{if !empty($ban.admin)}
 										{$ban.admin|escape:'html'}
 									{else}
-										<i><font color="#677882">Admin deleted.</font></i>
+										<i><font color="#677882">Администратор удалён.</font></i>
 									{/if}
 								</td>
 							</tr>
@@ -269,7 +269,7 @@
 								<td width="20%" height="16" class="listtable_1">Где заблокирован</td>
 								<td height="16" class="listtable_1" id="ban_server_{$ban.ban_id}">
 									{if $ban.server_id == 0}
-										Web Ban
+										Веб блокировка
 									{else}
 										Пожалуйста подождите...
 									{/if}
@@ -283,7 +283,7 @@
 								<td width="20%" height="16" class="listtable_1">Отклонено подключений ({$ban.blockcount})</td>
 								<td height="16" class="listtable_1">
 								{if $ban.banlog == ""}
-									<i><font color="#677882">never</font></i>
+									<i><font color="#677882">никогда</font></i>
 								{else}
 									{$ban.banlog}
 								{/if}
@@ -308,7 +308,7 @@
 											{if !empty($commenta.comname)}
                                                 <b>{$commenta.comname|escape:'html'}</b>
                                             {else}
-                                                <i><font color="#677882">Admin deleted</font></i>
+                                                <i><font color="#677882">Администратор удалён.</font></i>
                                             {/if}
 										</td>
 										<td align="right">

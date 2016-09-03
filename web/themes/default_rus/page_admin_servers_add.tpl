@@ -3,13 +3,13 @@
 {else}
 
 <div id="add-group">
-	<h3>Server Details</h3>
-	For more information or help regarding a certain subject move your mouse over the question mark.<br /><br />
+	<h3>Параметры сервера</h3>
+	Для получения более подробной информации или справки по определённому параметру наведите курсор мыши на знак вопроса.<br /><br />
 	<input type="hidden" name="insert_type" value="add">
 	<table width="90%" border="0" style="border-collapse:collapse;" id="group.details" cellpadding="3">
 		<tr>
 		    <td valign="top" width="35%">
-		    	<div class="rowdesc">{help_icon title="Server Address" message="This is the IP address to your server. You can also type a domain, if you have one setup."}Server IP/Domain</div>
+		    	<div class="rowdesc">{help_icon title="Адрес сервера" message="Укажите здесь IP адрес сервера. Вы можете указать FQDN (полное доменное имя) сервера, если знаете его."}IP/FQDN сервера</div>
 		    </td>
 		    <td>
 		    	<div align="left">
@@ -21,7 +21,7 @@
 		
 		<tr>
 			<td valign="middle">
-				<div class="rowdesc">{help_icon title="Server Port" message="This is the port that the server is running off. <br /><br /><i>Default: 27015</i>"}Server Port</div>
+				<div class="rowdesc">{help_icon title="Порт сервера" message="Порт на котором работает сервер. <br /><br /><i>По умолчанию: 27015</i>"}Порт сервера</div>
 			</td>
 		    <td>
 		    	<div align="left">
@@ -33,7 +33,7 @@
 
 		<tr>
 			<td valign="middle">
-				<div class="rowdesc">{help_icon title="Rcon Password" message="This is your servers RCON password. This can be found in your server.cfg file next to <i>rcon_password</i>.<br /><br />This will be used to allow admins to administrate the server though the web interface."}RCON Password</div>
+				<div class="rowdesc">{help_icon title="Пароль Rcon" message="Это пароль RCON вашего сервера. Можно найти в файле server.cfg в строке <i>rcon_password</i>.<br /><br />Он используется для администрирования сервера через веб-интерфейс."}Пароль RCON</div>
 			</td>
 		    <td>
 		    	<div align="left">
@@ -45,7 +45,7 @@
 		  
 		<tr>
 		    <td valign="middle">
-		    	<div class="rowdesc">{help_icon title="Rcon Password" message="Please re-type your rcon password to avoid 'typos'"}RCON Password (Confirm)</div>
+		    	<div class="rowdesc">{help_icon title="Пароль Rcon" message="Пожалуйста введите ваш пароль пароль RCON повторно, чтобы избежать опечаток"}Пароль RCON (подтверждение)</div>
 		    </td>
 		    <td>
 		    <div align="left">
@@ -57,13 +57,13 @@
 		 
 		<tr>
 			<td valign="middle">
-				<div class="rowdesc">{help_icon title="Server Mod" message="Select the mod that your server is currently running."}Server MOD </div>
+				<div class="rowdesc">{help_icon title="МОД сервера" message="Выберите МОД запущенный на вашем сервере."}МОД сервера </div>
 			</td>
 		    <td>
 		    	<div align="left" id="admingroup">
 		      		<select name="mod" TABINDEX=5 onchange="" id="mod" class="select">
 						{if !$edit_server}
-		        		<option value="-2">Please Select...</option>
+		        		<option value="-2">Пожалуйста выберите...</option>
 						{/if}
 							{foreach from="$modlist" item="mod"}
 								<option value='{$mod.mid}'>{$mod.name}</option>
@@ -76,7 +76,7 @@
 		  
 		<tr>
 		    <td valign="middle">
-		    	<div class="rowdesc">{help_icon title="Enabled" message="Enables the server to be shown on the public servers list."}Enabled</div>
+		    	<div class="rowdesc">{help_icon title="Включить" message="Включает сервер в список публичных серверов."}Включить</div>
 		    </td>
 		    <td>
 		    <div align="left">
@@ -88,7 +88,7 @@
 		
 		<tr>
 			<td valign="middle">
-				<div class="rowdesc">{help_icon title="Server Groups" message="Choose the groups to add this server to. Server groups are used for adding admins to specific sets of servers."}Server Groups </div>
+				<div class="rowdesc">{help_icon title="Группы серверов" message="Выберите группу в которую хотите добавить сервер. Группы серверов используются администраторами для задания спечефических настроек сереров."}Группы серверов </div>
 			</td>
 		    <td>&nbsp;</td>
 		</tr>
@@ -115,7 +115,7 @@
 				{sb_button text=$submit_text onclick="process_add_server();" class="ok" id="aserver" submit=false}
 			{/if}
 			      &nbsp;
-				{sb_button text="Back" onclick="history.go(-1)" class="cancel" id="back" submit=false}
+				{sb_button text="Назад" onclick="history.go(-1)" class="cancel" id="back" submit=false}
 			</td>
 		</tr>
 	</table>

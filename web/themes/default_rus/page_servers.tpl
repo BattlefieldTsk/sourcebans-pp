@@ -7,7 +7,7 @@
 				<td width="2%" height="16" class="listtable_top">ОС</td>
 				<td width="2%" height="16" class="listtable_top">VAC</td>
 				<td height="16" class="listtable_top" align="center"><b>Имя сервера</b></td>
-				<td width="10%" height="16" class="listtable_top"><b>Игроки</b></td>
+				<td width="10%" height="16" class="listtable_top"><b>Игроков</b></td>
 				<td width="10%" height="16" class="listtable_top"><b>Карта</b></td>
 			  </tr>
 			 </thead>

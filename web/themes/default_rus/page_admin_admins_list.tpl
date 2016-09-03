@@ -2,8 +2,8 @@
 	Access Denied
 {else}
 
-<h3>Admins (<span id="admincount">{$admin_count}</span>)</h3>
-Click on an admin to see more detailed information and actions to perform on them.<br /><br />
+<h3>Администраторы (<span id="admincount">{$admin_count}</span>)</h3>
+Нажмите на администраторе чтобы увидеть более подробную информацию и выполнить требуемые действия над ним.<br /><br />
 
 {php} require (TEMPLATES_PATH . "/admin.admins.search.php");{/php}
 
@@ -13,13 +13,13 @@ Click on an admin to see more detailed information and actions to perform on the
 <div id="banlist">
 <table width="99%" cellspacing="0" cellpadding="0" align="center">
 	<tr>
-		<td width="34%" class="listtable_top"><b>Name</b></td>
-		<td width="33%" class="listtable_top"><b>Server Admin Group </b></td>
-		<td width="33%" class="listtable_top"><b>Web Admin Group</b></td>
+		<td width="34%" class="listtable_top"><b>Ник администратора</b></td>
+		<td width="33%" class="listtable_top"><b>Группа администраторов серверов </b></td>
+		<td width="33%" class="listtable_top"><b>Веб группа администраторов</b></td>
 	</tr>
 	{foreach from="$admins" item="admin"}
 		<tr onmouseout="this.className='tbl_out'" onmouseover="this.className='tbl_hover'" class="tbl_out opener">
-			<td class="listtable_1" style="padding:3px;">{$admin.user} (<a href="./index.php?p=banlist&advSearch={$admin.aid}&advType=admin" title="Show bans">{$admin.bancount} bans</a> | <a href="./index.php?p=banlist&advSearch={$admin.aid}&advType=nodemo" title="Show bans without demo">{$admin.nodemocount} w.d.</a>)</td>
+			<td class="listtable_1" style="padding:3px;">{$admin.user} (<a href="./index.php?p=banlist&advSearch={$admin.aid}&advType=admin" title="Показать блокировки">{$admin.bancount} блокировок</a> | <a href="./index.php?p=banlist&advSearch={$admin.aid}&advType=nodemo" title="Показать блокировки без демо">{$admin.nodemocount} без демо</a>)</td>
 			<td class="listtable_1" style="padding:3px;">{$admin.server_group}</td>
 			<td class="listtable_1" style="padding:3px;">{$admin.web_group}</td>
  		</tr>
@@ -29,13 +29,13 @@ Click on an admin to see more detailed information and actions to perform on the
 					<table width="100%" cellspacing="0" cellpadding="3" bgcolor="#eaebeb">
 						<tr>
 			            	<td align="left" colspan="3" class="front-module-header">
-								<b>Admin Details of {$admin.user}</b>
+								<b>Информация об администраторе {$admin.user}</b>
 							</td>
 			          	</tr>
 			          	<tr align="left">
-				            <td width="35%" class="front-module-line"><b>Server Admin Permissions</b></td>
-				            <td width="35%" class="front-module-line"><b>Web Admin Permissions</b></td>
-				            <td width="30%" valign="top" class="front-module-line"><b>Action</b></td>
+				            <td width="35%" class="front-module-line"><b>Права администратора на сервере</b></td>
+				            <td width="35%" class="front-module-line"><b>Права администратора в вэб интерфейсе</b></td>
+				            <td width="30%" valign="top" class="front-module-line"><b>Действие</b></td>
 			          	</tr>
 			          	<tr align="left">
 				            <td valign="top">{$admin.server_flag_string}</td>
@@ -45,27 +45,27 @@ Click on an admin to see more detailed information and actions to perform on the
 						        	<ul>
 						        	{if $permission_editadmin}
 							        	<li>
-							        		<a href="index.php?p=admin&c=admins&o=editdetails&id={$admin.aid}"><img src="images/details.png" border="0" alt="" style="vertical-align:middle"/> Edit Details</a>
+							        		<a href="index.php?p=admin&c=admins&o=editdetails&id={$admin.aid}"><img src="images/details.png" border="0" alt="" style="vertical-align:middle"/> Редактировать профиль</a>
 							        	</li>
 							        	<li>
-							        		<a href="index.php?p=admin&c=admins&o=editpermissions&id={$admin.aid}"><img src="images/permissions.png" border="0" alt="" style="vertical-align:middle" /> Edit Permissions</a>
+							        		<a href="index.php?p=admin&c=admins&o=editpermissions&id={$admin.aid}"><img src="images/permissions.png" border="0" alt="" style="vertical-align:middle" /> Редактировать права</a>
 							        	</li>
 							        	<li>
-							        		<a href="index.php?p=admin&c=admins&o=editservers&id={$admin.aid}"><img src="images/server_small.png" border="0" alt="" style="vertical-align:middle" /> Edit Server Access</a>
+							        		<a href="index.php?p=admin&c=admins&o=editservers&id={$admin.aid}"><img src="images/server_small.png" border="0" alt="" style="vertical-align:middle" /> Доступ к серверам</a>
 							        	</li>
 							        	<li>
-							        		<a href="index.php?p=admin&c=admins&o=editgroup&id={$admin.aid}"><img src="images/groups.png" border="0" alt="" style="vertical-align:middle" /> Edit Groups</a>
+							        		<a href="index.php?p=admin&c=admins&o=editgroup&id={$admin.aid}"><img src="images/groups.png" border="0" alt="" style="vertical-align:middle" /> Редактировать группы</a>
 							        	</li>
 						        	{/if}
 						        	{if $permission_deleteadmin}
 						            	<li>
-							        		<a href="#" onclick="RemoveAdmin({$admin.aid}, '{$admin.user}');"><img src="images/delete.png" border="0" alt="" style="vertical-align:middle" /> Delete Admin</a>
+							        		<a href="#" onclick="RemoveAdmin({$admin.aid}, '{$admin.user}');"><img src="images/delete.png" border="0" alt="" style="vertical-align:middle" /> Удалить администратора</a>
 							        	</li>
 						            {/if}
 						          	</ul>
 								</div>
-							   	<div class="front-module-line" style="padding:3px;">Immunity Level: <b>{$admin.immunity}</b></div>
-							   	<div class="front-module-line" style="padding:3px;">Last Visited: <b><small>{$admin.lastvisit}</small></b></div>
+							   	<div class="front-module-line" style="padding:3px;">Уровень иммунитета: <b>{$admin.immunity}</b></div>
+							   	<div class="front-module-line" style="padding:3px;">Последний визит: <b><small>{$admin.lastvisit}</small></b></div>
 							</td>
 						</tr>
 					</table>

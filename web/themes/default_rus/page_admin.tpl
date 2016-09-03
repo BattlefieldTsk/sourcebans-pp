@@ -71,7 +71,7 @@
 	<tr>
 		<td class="listtable_1" style="border-right: 3px solid #CFCAC6;">
 			{if $sb_svn}
-				Latest Git: <strong id='svnrev'>Пожалуйста подождите...</strong>
+				Последняя в репозитории Git: <strong id='svnrev'>Пожалуйста подождите...</strong>
 			{/if}		
 		</td>
 		<td class="listtable_1" style="border-right: 3px solid #CFCAC6; border-left: 3px solid #CFCAC6;">&nbsp;</td>

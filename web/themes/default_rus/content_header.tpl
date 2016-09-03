@@ -1,5 +1,5 @@
 <div id="msg-red-debug" style="display:none;" >
-	<i><img src="./images/warning.png" alt="Warning" /></i>
+	<i><img src="./images/warning.png" alt="Предупреждение" /></i>
 	<b>Debug</b>
 	<br />
 	<div id="debug-text">
