@@ -4,7 +4,7 @@
 	<h3>Серверов (<span id="srvcount">{$server_count}</span>)</h3>
 	
 	{if $permission_config}
-		Посмотреть файл конфигурации подключения к базе данных, который вам необходимо загрузить на ваш игровой сервер, можно нажав <a href="index.php?p=admin&c=servers&o=dbsetup">ЗДЕСЬ</a>.<br /><br />
+		Посмотреть файл конфигурации подключения к базе данных, который вам необходимо загрузить на ваш игровой сервер, можно нажав <a href="index.php?p=admin&c=servers&o=dbsetup"><b>здесь</b></a>.<br /><br />
 	{/if}
 	
 	<table width="100%" cellpadding="1">
@@ -13,7 +13,7 @@
 		<td class="front-module-header" width="54%" height='16'><strong>Имя сервера</strong></td>
 		<td class="front-module-header" width="6%" height='16'><strong>Игроков</strong></td>
 		<td class="front-module-header" width="5%" height='16'><strong>МОД</strong></td>
-		<td class="front-module-header" height='16'><strong>Действие</strong></td>
+		<td class="front-module-header" height='16'><strong>Действия</strong></td>
 	</tr>
 	{foreach from="$server_list" item="server"}
 	

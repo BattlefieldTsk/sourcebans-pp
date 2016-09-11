@@ -168,8 +168,8 @@
 				        <option value="0">Главная</option>
 				      	<option value="1">Блокировки</option>
 				      	<option value="2">Сервера</option>
-				        <option value="3">Submit a ban</option>
-				        <option value="4">Protest a ban</option>
+				        <option value="3">Запрос на блокировку игрока</option>
+				        <option value="4">Опротестовать блокировку</option>
 					</select>
 		    	</div>
 		    </td>

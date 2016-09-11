@@ -283,7 +283,7 @@
 								<td width="20%" height="16" class="listtable_1">Отклонено подключений ({$ban.blockcount})</td>
 								<td height="16" class="listtable_1">
 								{if $ban.banlog == ""}
-									<i><font color="#677882">никогда</font></i>
+									<i><font color="#677882">нет</font></i>
 								{else}
 									{$ban.banlog}
 								{/if}

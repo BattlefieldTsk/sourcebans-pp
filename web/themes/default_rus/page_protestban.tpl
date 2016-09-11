@@ -4,7 +4,7 @@
 	</tr>
 </table>
 <div id="submit-main">
-Прежде чем продолжит убедитесь что вы проверили наш список блокировок и нашли <a href="index.php?p=banlist">ЗДЕСЬ</a>, что вы перечислены и по какой причине.<br />
+Прежде чем продолжит убедитесь что вы проверили наш список блокировок и нашли <a href="index.php?p=banlist"><b>здесь</b></a>, что вы перечислены и по какой причине.<br />
 Если вы нашли себя в списке блокировок, а прична не соответствует действительности вы можете написать протест.<br /><br />
 <form action="index.php?p=protest" method="post">
 <input type="hidden" name="subprotest" value="1">
@@ -56,7 +56,7 @@
 <tr>
 	<td width="20%"><span class="mandatory">*</span> = Поля обязательные для заполнения</td>
 	<td>
-		{sb_button text=Submit class=ok id=alogin submit=true}
+		{sb_button text=Отправить class=ok id=alogin submit=true}
 	</td>
     <td>&nbsp;</td>
 </tr>

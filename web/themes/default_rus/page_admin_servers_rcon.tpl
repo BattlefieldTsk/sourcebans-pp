@@ -49,7 +49,7 @@ $E('html').onkeydown = function(event){
 function SendRcon()
 {
 	xajax_SendRcon('-{$id}-', $('cmd').value, true);
-	 $('cmd').value='Executing, Please Wait...'; $('cmd').disabled='true'; $('rcon_btn').disabled='true';
+	 $('cmd').value='Выполняется, Пожалуйста подождите...'; $('cmd').disabled='true'; $('rcon_btn').disabled='true';
 	 
 }
 </script>

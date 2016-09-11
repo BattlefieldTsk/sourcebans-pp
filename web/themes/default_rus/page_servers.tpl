@@ -53,7 +53,7 @@
 									<div align='center'>
 										<p style="font-size: 13px;">{$server.ip}:{$server.port}</p> 
 										<input type='submit' onclick="document.location = 'steam://connect/{$server.ip}:{$server.port}'" name='button' class='btn game' style='margin:0;' id='button' value='Подключиться' />
-										<input type='button' onclick="ShowBox('Reloading..','<b>Обновление данных сервера...</b><br><i>Please Wait!</i>', 'blue', '', true);document.getElementById('dialog-control').setStyle('display', 'none');xajax_RefreshServer({$server.sid});" name='button' class='btn refresh' style='margin:0;' id='button' value='Refresh' /><br /><br />
+										<input type='button' onclick="ShowBox('Reloading..','<b>Обновление данных сервера...</b><br><i>Пожалуйста подождите!</i>', 'blue', '', true);document.getElementById('dialog-control').setStyle('display', 'none');xajax_RefreshServer({$server.sid});" name='button' class='btn refresh' style='margin:0;' id='button' value='Refresh' /><br /><br />
 									</div>
 								  </div>
 							  </div>

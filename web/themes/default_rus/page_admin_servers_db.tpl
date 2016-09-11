@@ -1,5 +1,5 @@
-<h3>SourceBans Database Config</h3>
-The following config file is the file your game server needs to be able to communicate with the database. You need to copy its contents and place it in this file on your game server: <b>/[mod]/addons/sourcemod/configs/databases.cfg</b><br><br />
+<h3>Конфигурация базы данных SourceBans</h3>
+Ниже расположено содержимое файла конфигурации необходимого для взаимодействия вашего игрового сервера с базой данных. Вам необходимо скопировать его содержимое и поместить в указанном файле на вашем игровом сервере: <b>/[mod]/addons/sourcemod/configs/databases.cfg</b><br><br />
 <table width="90%" style="border-collapse:collapse;" id="group.details" cellpadding="3">
   <tr>
     <td>
@@ -7,7 +7,7 @@ The following config file is the file your game server needs to be able to commu
     </td>
   </tr>
   <tr>
-    <td align="center">{sb_button text="Back" onclick="history.go(-1)" class="cancel" id="aconf" submit=false}</td>
+    <td align="center">{sb_button text="Назад" onclick="history.go(-1)" class="cancel" id="aconf" submit=false}</td>
   </tr>
 </table>
 

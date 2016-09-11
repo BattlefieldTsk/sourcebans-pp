@@ -35,7 +35,7 @@
 			          	<tr align="left">
 				            <td width="35%" class="front-module-line"><b>Права администратора на сервере</b></td>
 				            <td width="35%" class="front-module-line"><b>Права администратора в вэб интерфейсе</b></td>
-				            <td width="30%" valign="top" class="front-module-line"><b>Действие</b></td>
+				            <td width="30%" valign="top" class="front-module-line"><b>Действия</b></td>
 			          	</tr>
 			          	<tr align="left">
 				            <td valign="top">{$admin.server_flag_string}</td>

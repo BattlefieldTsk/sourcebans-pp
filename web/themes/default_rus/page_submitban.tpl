@@ -5,7 +5,7 @@
 </table>
 <div id="submit-main">
 	Здесь вы можете подать запрос на блокировку игрока который нарушил правила игрового сервера. При подаче запроса на длокировку просьба заполнять внимательно и все поля и быть максимально информативным в комментарии. Это гарантирует, что ваш запрос на блокировку будет обработан быстрее.<br /><br />
-    Для получени краткой инструкции о том как создать демо нажмите <a href="javascript:void(0)" onclick="ShowBox('Как записать демо', 'Когда вы находитесь в режиме спектатора или используете GoTV и наблюдаете за игроком, нажмите клавишу ` на клавиатуре. Затем введите record demoname и нажмите Enter. Полученный файл будет находиться в каталоге с модом.', 'blue', '', true);">ЗДЕСЬ</a><br /><br />
+    Для получени краткой инструкции о том как создать демо нажмите <a href="javascript:void(0)" onclick="ShowBox('Как записать демо', 'Когда вы находитесь в режиме спектатора или используете GoTV и наблюдаете за игроком, нажмите клавишу ` на клавиатуре. Затем введите record demoname и нажмите Enter. Полученный файл будет находиться в каталоге с модом.', 'blue', '', true);"><b>здесь</b></a><br /><br />
 <form action="index.php?p=submit" method="post" enctype="multipart/form-data">
 <input type="hidden" name="subban" value="1">
 <table cellspacing='10' width='100%' align='center'>
@@ -75,7 +75,7 @@
 <tr>
 	<td width="20%"><span class="mandatory">*</span> = Поля обязательные для заполнения</td>
 	<td>
-		{sb_button text=Submit onclick="" class=ok id=save submit=true}
+		{sb_button text=Отправить onclick="" class=ok id=save submit=true}
 	</td>
     <td>&nbsp;</td>
 </tr>
