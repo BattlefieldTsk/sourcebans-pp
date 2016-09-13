@@ -80,7 +80,7 @@
 	<tr>
 		<td class="listtable_1" id='versionmsg' style="border-right: 3px solid #CFCAC6;">Пожалуйста подождите...</td>
 		<td class="listtable_1" style="border-right: 3px solid #CFCAC6; border-left: 3px solid #CFCAC6;"><strong> </strong></td>
-		<td class="listtable_1" style="border-left: 3px solid #CFCAC6;">Общий размер demo: <strong>{$demosize}</td>
+		<td class="listtable_1" style="border-left: 3px solid #CFCAC6;">Общий размер демо: <strong>{$demosize}</td>
 	</tr>
 	<tr>
 		<td>&nbsp;</td>

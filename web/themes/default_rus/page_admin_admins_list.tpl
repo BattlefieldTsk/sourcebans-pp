@@ -34,7 +34,7 @@
 			          	</tr>
 			          	<tr align="left">
 				            <td width="35%" class="front-module-line"><b>Права администратора на сервере</b></td>
-				            <td width="35%" class="front-module-line"><b>Права администратора в вэб интерфейсе</b></td>
+				            <td width="35%" class="front-module-line"><b>Права администратора в веб интерфейсе</b></td>
 				            <td width="30%" valign="top" class="front-module-line"><b>Действия</b></td>
 			          	</tr>
 			          	<tr align="left">

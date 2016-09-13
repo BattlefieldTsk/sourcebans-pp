@@ -4,15 +4,15 @@
 	{if NOT $groupbanning_enabled}
 		This feature is disabled! Only follow links!
 	{else}
-		<h3>Add Group Ban</h3>
+		<h3>Добавить блокировку группы</h3>
 		{if NOT $list_steam_groups}
-		Here you can add a ban for a whole steam community group.<br />
-		e.g. <code>http://steamcommunity.com/groups/interwavestudios</code><br /><br />
+		Здесь вы можете добавить блокировку участников группы steam сообщества. Каждый участник группы будет заблокирован по отдельности.<br />
+		например <code>http://steamcommunity.com/groups/interwavestudios</code><br /><br />
 		<table width="90%" style="border-collapse:collapse;" id="group.details" cellpadding="3">
 		<tr>
 			<td valign="top" width="35%">
 				<div class="rowdesc">
-					{help_icon title="Group Link" message="Type the link to a steam community group."}Group Link 
+					{help_icon title="Ссылка на группу" message="Укажите здесь ссылку на группу steam сообщества."}Ссылка на группу 
 				</div>
 			</td>
 			<td>
@@ -25,7 +25,7 @@
 		<tr>
 			<td valign="top" width="35%">
 				<div class="rowdesc">
-					{help_icon title="Group Ban Reason" message="Type the reason, why you are going to ban this steam community group."}Group Ban Reason 
+					{help_icon title="Причина блокировки группы" message="Укажите причину почему вы блокируете группу steam сообщества."}Причина блокировки группы 
 				</div>
 			</td>
 			<td>
@@ -38,9 +38,9 @@
 		<tr>
 			<td>&nbsp;</td>
 			<td>
-				{sb_button text="Add Group Ban" onclick="ProcessGroupBan();" class="ok" id="agban" submit=false}
+				{sb_button text="Добавить блокировку группы" onclick="ProcessGroupBan();" class="ok" id="agban" submit=false}
 					  &nbsp;
-				{sb_button text="Back" onclick="history.go(-1)" class="cancel" id="aback"}
+				{sb_button text="Назад" onclick="history.go(-1)" class="cancel" id="aback"}
 			</td>
 		</tr>
 		</table>
