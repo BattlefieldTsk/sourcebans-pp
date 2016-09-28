@@ -14,7 +14,7 @@
 			</form>
 			<form method="get" action="index.php">
 				<input type="hidden" name="p" value="commslist" />
-				<input class="searchbox" alt="Поиск блокировок микрофона и чата" name="searchText" type="text" onfocus="this.value='';" onblur="if (this.value=='') {this.value=' Поиск блокировок микрофона и чата...';}" value=" Поиск блокировок микрофона и чата... " />
+				<input class="searchbox" alt="Поиск блокировок чата и микрофона" name="searchText" type="text" onfocus="this.value='';" onblur="if (this.value=='') {this.value=' Поиск блокировок чата и микрофона...';}" value=" Поиск блокировок чата и микрофона... " />
 				<input type="submit" name="Submit" value="Search" style="cursor:pointer;" class="button" />
 			</form>
 		</div>
